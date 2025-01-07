@@ -10,7 +10,7 @@ const Header = () => {
   // const dispatch = useDispatch();
 
   return (
-    <div className="max-w-4xl mx-auto bg-white text-gray-800 p-4 rounded-lg shadow-lg mb-6">
+    <div className="max-w-4xl mx-auto bg-[#edfdcc] text-gray-800 p-4 rounded-lg shadow-lg mb-6">
       
       <div className="flex items-center">
        
