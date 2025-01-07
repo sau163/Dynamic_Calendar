@@ -12,7 +12,7 @@ const App = () => {
         <Header />
         {/* <Calendar /> */}
       </div>
-    </Provider>
+    </Provider> 
   );
 };
 

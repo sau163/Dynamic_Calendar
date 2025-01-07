@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect } from "react";
 import { Dialog, DialogContent, DialogTitle } from "@radix-ui/react-dialog";
-import { Button } from "@/components/ui/button"; // Assuming you have a button component
+import { Button } from "@/components/ui/button"; 
 import { useDispatch } from "react-redux";
 import { addEvent, editEvent } from "../slice/CalSlice";
 
@@ -10,7 +10,7 @@ const EventForm = ({ event, date, onClose }) => {
   const [description, setDescription] = useState(event ? event.description : "");
   const [startTime, setStartTime] = useState(event ? event.startTime : "");
   const [endTime, setEndTime] = useState(event ? event.endTime : "");
-  const [eventDate, setEventDate] = useState(date); // Store the selected date
+  const [eventDate, setEventDate] = useState(date); 
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -19,7 +19,7 @@ const EventForm = ({ event, date, onClose }) => {
       setDescription(event.description);
       setStartTime(event.startTime);
       setEndTime(event.endTime);
-      setEventDate(event.date); // Set the date if editing an event
+      setEventDate(event.date);
     }
   }, [event]);
 
@@ -30,7 +30,7 @@ const EventForm = ({ event, date, onClose }) => {
       description,
       startTime,
       endTime,
-      date: eventDate, // Include the event date
+      date: eventDate, 
     };
 
     if (event) {
